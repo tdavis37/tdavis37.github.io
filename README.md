@@ -9,6 +9,6 @@ Follow me on Instagram to keep tabs on my journey  [@_simplici_tea](https://www.
    Check out [the Official Site](http://100daysofcode.com/) for the #100DaysOfCode movement. Connect with others on the platform of your choice from this list: www.100DaysOfCode.com/connect
     Also, [here](https://join.slack.com/t/100xcode/shared_invite/zt-gaxsv2fp-N8ORl8wxsOF3rHaXgavMLA) is a invite link to the 100DaysOfCode Slack channel
     
-##My Web Development Projects:
+## My Web Development Projects:
 
 1. [Google Homepage Clone](https://tdavis37.github.io/google-homepage/) 
