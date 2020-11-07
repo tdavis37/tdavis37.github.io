@@ -1,0 +1,261 @@
+body {
+    font-family: arial,sans-serif;
+    margin:0;
+    padding:0;
+
+}
+
+#top-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 28px;
+    margin-top: 15px;
+}
+
+#top-nav .item-nav{
+    padding-left: 15px;
+    list-style-type: none;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+#top-nav .item-nav a {
+    cursor: pointer;
+    font-family:arial, sans-serif;
+    font-size:13px;
+}
+#top-nav .item-nav a:hover {
+    text-decoration-line: underline ;
+}
+
+#container-top-nav{
+    display: flex;
+    padding-right: 20px;
+}
+
+#nav-logo {
+    background-image:url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position-x:-132px;
+    background-position-y:-38px;
+    background-size:528px 68px;
+    cursor:pointer;
+    display:inline-block;
+    height:30px;
+    opacity:0.55;
+    width:50px;
+}
+
+#nav-logo:hover {
+    opacity:1;
+}
+
+#user-nav-logo{
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/s150x150/120341803_964517187390983_1228900097050456789_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=MPCJHZ1A9K0AX-bxPPO&oh=db5e951685fc4c2604caa6ec2af7c7aa&oe=5FCD915B);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+    margin-right: -5px;
+}
+
+#google-logo {
+    margin-top: 42px;
+}
+
+#google-logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 109px;
+}
+
+#search-bar {
+    width: 578px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+#buttons {
+    padding-top:18px;
+    display: block;
+    text-align: center;
+    margin-right: 12px;
+}
+
+#buttons button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#paragraph-bp {
+    display: flex;
+    justify-content: center;
+    margin-block-end:16px;
+    margin-block-start:13px;
+    font-family:arial, sans-serif;
+    font-size:13px;
+    height:28px;
+    line-height:28px;
+}
+
+#link-paragraph {
+    color:rgb(26, 13, 171);
+    cursor:pointer;
+}
+#link-paragraph:hover {
+    text-decoration-line: underline;
+}
+
+
+#container-bottom-nav {
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgb(242, 242, 242);
+    background-image:none;
+    background-origin:padding-box;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-repeat: initial;
+    background-size:auto;
+    border-top-color:rgb(228, 228, 228);
+    border-top-style:solid;
+    border-top-width:1px solid #e4e4e4;
+    bottom:1px;
+    color:rgb(34, 34, 34);
+    display:block;
+    font-family:arial, sans-serif;
+    font-size:13.3333px;
+    height:40px;
+    left:0px;
+    line-height:40px;
+    min-width:400px;
+    position:absolute;
+    right:0px;
+    visibility:visible;
+}
+
+
+#container-bottom-nav #footer {
+    color:rgba(0, 0, 0, 0.54);
+    display:block;
+    font-family:arial, sans-serif;
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    text-align:left;
+    visibility:visible;
+    border-bottom-color:rgb(228, 228, 228);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+#container-bottom-nav #footer a {
+    margin-left:30px;
+}
+
+
+#bottom-nav  #span2 {
+    float: right;
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    mar<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Google</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    </head>
+    
+    <body style = "background: url(https://www.androidguys.com/wp-content/uploads/2015/12/Cute-Merry-Christmas-Snowmen-Free-Wallpaper.jpg); background-size: 100%;"></body>
+    <body>
+    
+        <nav id="top-nav">
+            <div id="container-top-nav">        
+                <div class="item-nav"><a>Gmail</a></div>
+                <div class="item-nav"><a>Images</a></div>
+            </div>
+            <a id="nav-logo"></a>
+            <img id="user-nav-logo" src="https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/s150x150/120341803_964517187390983_1228900097050456789_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=MPCJHZ1A9K0AX-bxPPO&oh=db5e951685fc4c2604caa6ec2af7c7aa&oe=5FCD915B" height = "35"/>
+        </ul>
+        </nav>
+        <div id="google-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+        </div>
+    
+        <input id="search-bar" type="text"/>
+        
+        <div id="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        
+        <p id="paragraph-bp" >Google homepage created by: &nbsp<a id="link-paragraph" href="https://www.instagram.com/_simplici_tea/"> @_simplici_tea</a></p>
+        <div id="container-bottom-nav">
+            <nav id ="bottom-nav">
+                <span id="span1">
+                    <a>Advertising</a>
+                    <a>Business</a>
+                    <a>About</a>
+                    <a>How Search works</a>
+                </span>
+                <span id="span2">
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Settings</a>
+                </span>
+            </nav>
+        </div>
+    </body>
+    </html>gin-right:30px;
+    visibility:visible;
+}
+
+#bottom-nav #span1 {
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    margin-right:30px;
+    visibility:visible;
+}
+
+#bottom-nav #span1 a, #bottom-nav #span2 a{
+    color:rgb(95, 99, 104);
+    cursor:pointer;
+    padding-left:27px;
+    text-decoration-color:rgb(16, 106, 216);
+    text-decoration-line:none;
+    text-decoration-style:solid;
+}
+
+#bottom-nav #span1 a:hover, #bottom-nav #span2 a:hover{
+    text-decoration-line: underline;
+}
