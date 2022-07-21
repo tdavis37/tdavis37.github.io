@@ -1,0 +1,38 @@
+body {
+    background-image: url('https://washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/2021-05/Ice%20Cream%20Jubilee%20courtesy%20of%20washington.org_.JPG?h=56d0ca2e&itok=U9iAfSXD');
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+body, h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+.nav ul {
+    list-style: none;
+    background-color:white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid rgb(235, 228, 228);
+}
+.nav a {
+    text-decoration: none;
+    color: rgb(146, 138, 138);
+    display: block;
+    transition: .3s grey;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: captialize;
+}
+.nav a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
