@@ -13,4 +13,4 @@ Follow me on Instagram to keep tabs on my journey  [@_simplici_tea](https://www.
 
 1. [Google Homepage Clone](https://tdavis37.github.io/google-homepage/) 
 2. [Portfolio Website](https://tdavis37.github.io/Portfolio%20Website/)
-3. [Login Page](https://tdavis37.github.io/Modern%20Login%20Page)
+3. [Login Page](https://tdavis37.github.io/Modern%20Login%20Page/)
