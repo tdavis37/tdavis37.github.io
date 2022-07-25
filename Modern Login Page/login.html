@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <main">
-      <form id="form" , action="https://washington.org/">
+      <form name="form1", id="form" , action="https://washington.org/", onsubmit="required()">
         <h2>Login</h2>
         <input type="search" placeholder="Email"/>
         <br />
@@ -24,6 +24,8 @@
           name="Password"
           placeholder="Password"
         />
+        <li class="rq">*Required field! Please enter password.</li>
+
         <br />
         <button>Log in</button>
         <br>
@@ -33,5 +35,7 @@
       </form>
       </main>
     </div>
+
+    <script src="login.js"></script>
   </body>
 </html>
