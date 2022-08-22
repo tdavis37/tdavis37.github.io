@@ -18,7 +18,7 @@
 
 body main {
   background-repeat: no-repeat;
-  background-image: url(../IMAGES/pets.jpg);
+  background-image: url(IMAGES/pets.jpg);
   background-size: cover;
 }
 
