@@ -21,18 +21,24 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-		<header id="pageHeader">
-			 <h2><a th:href="@{/index}">Pet Grooming</a></h2>
-			<ul>
-				<li><a href="@{/index}">HOME</a></li>
-				<li><a href="@{/#}">ABOUT</a></li>
-				<li><a href="@{/gallery}">GALLERY</a></li>
-				<li><a href="@{/services}">SERVICES</a></li>
-				<li><a href="@{/login}">LOG IN</a></li>
-			</ul>
-		</header>
-	</div>
+  <div class="container-fluid">
+    <header id="pageHeader" class="navbar"]>
+        <h2><a href="index.html">Pet Grooming</a></h2>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">LOG IN</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </header>
+</div>
     <div id="container">
         <div class="left">
             
@@ -109,6 +115,8 @@
       
     });
     </script>  
+
+<script  src="JS/hamburger.js"></script>
 </body>
 </html>
 
