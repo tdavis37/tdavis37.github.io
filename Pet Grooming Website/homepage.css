@@ -20,8 +20,72 @@ html * {
 	color: #fff !important;
 	font-family: 'Corben', cursive !important;
   font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 	}
 	
+li, a, button {
+  font-family: 'Corben', cursive;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  background-color: #A26367;
+}
+
+
+header li {
+  line-height: 40px;
+  height: 40px;
+}
+
+header h2 a {
+  font-family: 'Lobster', cursive!important;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #A26367;
+}
+
+.nav__links {
+  list-style:none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  background-color: rgba(255,255,255,0.3)!important;
+  text-decoration: none; 
+  color: #fff;
+
+}
+
+.nav__links li:nth-child(1) a{
+  background-color: rgba(255,255,255,0.3)!important;
+  text-decoration: none; 
+  color: #fff;
+}
+
+
+
+
+
+
 
 body {
   background-repeat: no-repeat;
@@ -35,20 +99,20 @@ html, body {
     padding: 0;
     font-family: 'Corben', cursive;
     font-weight: 400;
-    height: 100vh;
+    height: auto;
     background-color: #e0ffcd;
   }
   
   
   /* color: #717600;​ */
 
-  .container-fluid {
+  /*.container-fluid {
     width: 100%;
     height: 80px;
-    background-color: #ffebbb;
-  }
+    background-color: #A26367;
+  } */
   
-  #pageHeader h2 {
+  /* #pageHeader h2 {
     font-family: 'Corben', cursive;
     font-size: 30px;
     color: rgb(224, 59, 59);
@@ -79,20 +143,20 @@ html, body {
     transition: 0.5s;
     text-decoration: none;
     list-style: none;
+  } */
+
+  /* #pageHeader ul li:nth-child(1) a{
+    color:#ffa4aa!important;
   }
 
-  #pageHeader ul li:nth-child(1) a{
-    color: #6D584F!important;
-  }
-
-
-  #pageHeader ul li a:hover {
-    color: #6D584F!important;
-  }
 
   #pageHeader ul li a:hover {
-    color: #6D584F!important;
+    color: #ffa4aa!important;
   }
+
+  #pageHeader ul li a:hover {
+    color: #ffa4aa!important;
+  } */
 
   main {
     text-align: center;
@@ -148,14 +212,14 @@ html, body {
   }
 
   .jumbotron .btn:hover {
-    background-color: #ffebbb;
+    background-color: #A26367;;;
   }
   h1 {
     color: #fff;
   }
   
   .btn-main {
-    background-color: #ffebbb;
+    background-color: #A26367;
     color: #fff;
     font-family: 'Corben', cursive;
     font-weight: 600;
@@ -173,7 +237,7 @@ html, body {
   }
   
   .btn-main:hover {
-    background-color: #b3a78b;
+    background-color: #a28587;
     font-size: 18px;
   }
   
@@ -190,19 +254,19 @@ html, body {
  /* used grid here */
   footer {
     padding: 20px;
-    background-color: #ffebbb
+    background-color: #A26367;;
   }
 
-  header {
-    background-color: #ffebbb
-  }
+  /* header {
+    background-color: #A26367;;
+  } */
 
   #pageFooter {
     grid-area: footer;
     color: #fff;
   }
 
-  #pageHeader {
+  /* #pageHeader {
     grid-area: header;
     width: 1200px;
     height: 80px;
@@ -212,7 +276,7 @@ html, body {
     align-items: center;
     padding: 0px 25px;
     min-width: 100px;
-  }
+  } */
 
   .supporting,
 .rating,
@@ -272,15 +336,15 @@ html, body {
   .nav-link {
     transition: 0.7s ease;
   }
-  #pageHeader h2 a {
+  header h2 a {
     display: none;
   }
-  #pageHeader {
+  header {
     width: 390px;
     height: 80px;
   }
   
-  #pageHeader ul {
+  header ul {
     width: 100%;
     position: absolute;
     display: flex;
@@ -288,10 +352,10 @@ html, body {
     align-items: center;
   }
 
-  #pageHeader ul li {
+  header ul li {
     list-style: none;
   }
-  #pageHeader ul li a {
+  header ul li a {
     font-family: 'Corben', cursive;
     color: #fff;
     list-style: none;
@@ -320,8 +384,8 @@ html, body {
   
 } 
 
-@media(max-width: 768px) {
-  #pageHeader h2 a {
+ @media(max-width: 768px) {
+  header h2 a {
     display: block;
   }
   @media only screen and (max-width: 980px) {
@@ -329,15 +393,15 @@ html, body {
   .nav-link {
     transition: 0.7s ease;
   }
-  #pageHeader h2 a {
+  header h2 a {
     display: none;
   }
-  #pageHeader {
+  header {
     width: 390px;
     height: 80px;
   }
   
-  #pageHeader ul {
+  header ul {
     width: 100%;
     position: absolute;
     display: flex;
@@ -345,10 +409,10 @@ html, body {
     align-items: center;
   }
 
-  #pageHeader ul li {
+  header ul li {
     list-style: none;
   }
-  #pageHeader ul li a {
+  header ul li a {
     font-family: 'Corben', cursive;
     color: #fff;
     list-style: none;
@@ -378,7 +442,7 @@ html, body {
 } 
 
 @media(max-width: 768px) {
-  #pageHeader h2 a {
+  header h2 a {
     display: block;
   }
   .nav-link {
@@ -399,48 +463,7 @@ html, body {
 
     .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-      position:fixed;
-      left: -100%;
-      top: 80px;
-      gap: 0;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .nav-item {
-      margin: 16px 0;
-    }
-
-    .nav-menu.active {
-      Left: 0;
-      position: fixed;
-      background: rgba(132, 77, 77, 0.3);
-      backdrop-filter: blur(5px);
-    }
-}.nav-link {
-    transition: 0.7s ease;
-  }
-
-    .hamburger {
-      display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
+    } 
 
     .nav-menu {
       position:fixed;
@@ -464,3 +487,44 @@ html, body {
       backdrop-filter: blur(5px);
     }
 }
+.nav-link {
+    transition: 0.7s ease;
+  }
+
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+     .nav-menu {
+      position:fixed;
+      left: -100%;
+      top: 80px;
+      gap: 0;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    } 
+
+     .nav-item {
+      margin: 16px 0;
+    }
+
+    .nav-menu.active {
+      Left: 0;
+      position: fixed;
+      background: rgba(132, 77, 77, 0.3);
+      backdrop-filter: blur(5px);
+    } 
