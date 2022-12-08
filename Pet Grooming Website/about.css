@@ -9,11 +9,10 @@ html * {
 	color: #fff!important;
 	font-family: 'Corben', cursive!important;
   font-weight: 400;
+  box-sizing: border-box;
 	}
 	
-  .hamburger {
-    display: none;
-  }
+ 
 #container {
     min-height: 100vh;
     display: flex;
@@ -41,103 +40,12 @@ html * {
     height: auto;
 }
 
-.container-fluid {
-    width: 100%;
-    height: 80px;
-    background-color: #ffebbb;
-  }
-
-  #pageHeader h2 {
-    font-family: 'Corben', cursive!important;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  #pageHeader h2 a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  #pageHeader ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #pageHeader ul li {
-    list-style: none;
-  }
-  #pageHeader ul li a {
-    font-family: 'Corben', cursive!important;
-    color: #fff;
-    list-style: none;
-    margin-right: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-    list-style: none;
-  }
-
-  #pageHeader ul li:nth-child(2) a{
-    color: #6D584F!important;
-  }
-
-
-  #pageHeader ul li:hover {
-    color: #6D584F!important;
-  }
-
-  #pageHeader ul li a:hover {
-    color: #6D584F!important;
-  }
 
   main {
     text-align: center;
     position: relative;
   }
   
-  .container-fluid {
-    width: 100%;
-    height: 80px;
-    background-color: #ffebbb;
-  }
-  
-  #pageHeader h2 {
-    font-family: 'Corben', cursive!important;
-    font-size: 30px;
-    color: rgb(224, 59, 59);
-    cursor: pointer;
-  }
-
-  #pageHeader h2 a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  #pageHeader ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #pageHeader ul li {
-    list-style: none;
-  }
-  #pageHeader ul li a {
-    font-family: 'Corben', cursive!important;
-    color: #fff;
-    list-style: none;
-    margin-right: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-    list-style: none;
-  }
-  
- 
 
   
   .jumbotron {
@@ -233,126 +141,111 @@ html * {
  /* used grid here */
   footer {
     padding: 20px;
-    background-color: #ffebbb
+    background-color: #A26367;
   }
 
-  header {
-    background-color: #ffebbb
-  }
+ 
 
   #pageFooter {
     grid-area: footer;
     color: #fff;
   }
 
-  #pageHeader {
-    grid-area: header;
-    width: 1200px;
-    height: 80px;
-    margin: auto;
+  header .navbar h2 a {
+    font-family: 'Lobster', cursive!important;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem;
+  }
+
+  .navbar {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 25px;
-    min-width: 100px;
+    background-color: #A26367;
+    color: white;
   }
   
-  @media only screen and (max-width: 980px) {
-
-    .nav-link {
-      transition: 0.7s ease;
-    }
-    #pageHeader h2 a {
-      display: none;
-    }
-    #pageHeader {
-      width: 390px;
-      height: 80px;
-    }
-    
-    #pageHeader ul {
-      width: 100%;
-      position: absolute;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .navbar-links {
+    height: 100%;
+  }
   
-    #pageHeader ul li {
-      list-style: none;
-    }
-    #pageHeader ul li a {
-      font-family: 'Corben', cursive;
-      color: #fff;
-      list-style: none;
-      margin-right: 50px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.5s ease;
-      text-decoration: none;
-      list-style: none;
-    }
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
   
-    .hamburger {
-      display: none;
-      cursor: pointer;
-    }
+  .navbar-links li {
+    list-style: none;
+  }
   
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: #fff;
-    }
-    
-  } 
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
   
-  @media(max-width: 768px) {
-    #pageHeader h2 a {
-      display: block;
-    }
-    .nav-link {
-      transition: 0.7s ease;
-    }
+  .navbar-links li:hover {
+    background-color: rgba(255,255,255,0.3)!important;
+  }
+  .navbar-links li:nth-child(2) {
+  background-color: rgba(255,255,255,0.3)!important;
+  text-decoration: none; 
+  color: #fff;
+  }
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
   
-      .hamburger {
-        display: block;
-      }
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
   
-      .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-      }
-  
-      .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-  
-      .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-  
-      .nav-menu {
-        position:fixed;
-        left: -100%;
-        top: 80px;
-        gap: 0;
+  @media (max-width: 800px) {
+    .navbar {
         flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
         width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
         text-align: center;
-        transition: 0.3s;
-      }
+    }
   
-      .nav-item {
-        margin: 16px 0;
-      }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
   
-      .nav-menu.active {
-        Left: 0;
-        position: fixed;
-        background: rgba(132, 77, 77, 0.3);
-        backdrop-filter: blur(5px);
-      }
+    .navbar-links.active {
+        display: flex;
+    }
   }
+  

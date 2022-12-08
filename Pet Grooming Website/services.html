@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="IMAGES/icon.png" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="services.css"/>
@@ -19,24 +20,30 @@
 <body>
 
 
-    <div class="container-fluid">
-        <header id="pageHeader" class="navbar"]>
-            <h2><a href="index.html">Pet Grooming</a></h2>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">GALLERY</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link">LOG IN</a></li>
-            </ul>
-    
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-        </header>
-    </div>
+   <header>
+    <nav class="navbar" style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+  ">
+      <h2><a href="index.html">Pet Grooming<span class="material-symbols-outlined">
+      </span></a></h2>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 
 
 <div class="row">
@@ -45,7 +52,6 @@
         <label for="options" class="select-label">Pet type</label>
         <select name="options" id="options" class="select-field">
             <option value="">Pet type</option>
-            <option value="Option 1">Dog</option>
             <option value="Option 2">Cat</option>
         </select>
     </div>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Corben&family=Noto+Sans&family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="IMAGES/icon.png" type="image/x-icon" />
 <link
   rel="stylesheet"
@@ -24,28 +25,30 @@
 <body>
 
 
-  <div class="container-fluid">
-    <header id="pageHeader" class="navbar">
-      <div class="hamburger">
+  <header>
+    <nav class="navbar" style="
+    padding-top: 0px;
+    padding-bottom: 0px;
+  ">
+      <h2><a href="index.html">Pet Grooming<span class="material-symbols-outlined">
+      </span></a></h2>
+      <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-      </div>
-      
-        <h2><a href="index.html">Pet Grooming</a></h2>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-            <li class="active"><a href="gallery.html" class="nav-link">GALLERY</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
-            <li class="nav-item"><a href="login.html" class="nav-link">LOG IN</a></li>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="login.html">LOGIN</a></li>
         </ul>
+      </div>
+    </nav>
+  </header>
 
-        
-    </header>
-</div>
-
-</main>
 
 <div class="contains">
   <div class="heading">
@@ -81,36 +84,9 @@
 </body>
 
 <footer id="pageFooter">Pet Grooming 2022</footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
 
-
-<script>
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
-});
-</script>
 
 <script  src="JS/hamburger.js"></script>
 </body>
