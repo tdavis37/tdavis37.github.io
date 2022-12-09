@@ -388,7 +388,41 @@ img {
     background-color: white;
     border-radius: 10px;
   }
-  
+  @media only screen and (max-width: 600px) {
+    .center {
+      width: 573px;
+      height: 400 px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .box {
+      width: 234px;
+      height: 234px;
+      overflow: hidden;
+      border: 7px solid #fff;
+      border-radius: 26px;
+  }
+
+    .box2 {
+      width: 234px;
+        height: 234px;
+        overflow: hidden;
+        border: 7px solid #fff;
+        border-radius: 26px;
+    }
+
+    img {
+      width: 228px;
+      height: 228px;
+      float: right;
+      margin-left: 20px;
+      border-radius: 20px;
+  }
+
+}
+
   @media (max-width: 800px) {
     .navbar {
         flex-direction: column;

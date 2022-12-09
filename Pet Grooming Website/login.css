@@ -21,6 +21,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(IMAGES/pets.jpg);
   background-size: cover;
+  overflow-x: hidden;
 }
 
 html, body {
