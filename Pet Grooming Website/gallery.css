@@ -358,6 +358,13 @@ color: #fff;
       align-items: flex-start;
   }
 
+  .navbar li {
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+
+
   .toggle-button {
       display: flex;
   }

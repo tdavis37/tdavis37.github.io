@@ -203,12 +203,7 @@ h3 {
   padding: 5px;
 }
 .row {
-  width: 980px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+ position: relative;
 }
 
 .row::after {
@@ -289,39 +284,42 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
   .row {
-    display: inline-block!important;
+    display: block!important;
     position: relative;
+    align-items: center;
+    justify-content: center!important;
+    padding: 20px 50px;
   }
 
-  .row .field-group {
-    display: inline-block!important;
-    position: relative;
-  }
+
   .field-group {
-    width: 529px;
+    width: 300px;
     float: left;
     padding: 5px;
 }
 
 button {
-    font-family: 'Corben', cursive;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 13.5px 171px;
-    border-radius: 10px;
-    font-weight: 600;
-    border: none;
-    color: #fff;
-    background-color: #A26367;
-    margin-right: 16px;
-    margin-top: 30px;
-    transition: 500ms ease all;
+  font-family: 'Corben', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13.5px 50px;
+  width: 300px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background-color: #A26367;
+  margin-right: 16px;
+  margin-top: 30px;
+  transition: 500ms ease all;
 }
+
+  
 }
 
 
 
-}
+
 @media only screen and (max-width: 980px) {
 
   .nav-link {

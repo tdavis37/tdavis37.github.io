@@ -6,42 +6,63 @@
 }
 
 html * { 
-	color: #fff!important;
 	font-family: 'Corben', cursive!important;
   font-weight: 400;
   box-sizing: border-box;
 	}
 	
   body {
-    overflow: hidden;
+    background-color: #f9f6f6!important;
+    overflow-x: hidden;
   }
  
 #container {
-    min-height: 100vh;
+    min-height: 88vh;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-#container2 {
-	min-height: 100vh;
-    display: flex;
-}
+
 
 .left {
     width: 50vw;
-    background-color: #f9f6f6;
+    background-color: #f9f6f6!important;
     color: #6D584F!important;
 }
 
 .right {
     width: 50vw;
-    background-color: #fff;
 }
 
  .resize {
-    width: 675px;
-    height: auto;
+   width: auto;
+   height: 80vh;
+   display: block;
+   object-position: center;
 }
+
+#container .left h1 {
+  color: #6D584F!important;
+  text-align: center!important;
+}
+
+#container .left p {
+    color: #6D584F!important;
+    text-align: center!important;
+  }
+
+  #container .left h2 {
+      font-family: 'Lobster', cursive!important;
+      font-size: 45px;
+      cursor: pointer;
+      color: #6D584F!important;
+      text-decoration: none;
+      margin: 0.5rem;
+      text-align: center!important;
+  }
 
 
   main {
@@ -51,63 +72,8 @@ html * {
   
 
   
-  .jumbotron {
-    width: 1200px;
-    height: 100vh;
-    /* margin: -278px;​ */
-    padding: 437px;
-    background-size: cover;
-    text-align: center!important;
-    display: block;
-  	margin-left: -234px;
-  	margin-right: auto;
- 	 width: 40%;
-  }
-  p {
-    color: #6D584F!important;
-    text-align: center!important;
-  }
-
-  .jumbotron p {
-    font-family: 'Corben', cursive!important;
-    font-weight: bold;
-    line-height: 30px;
-    padding-top: 10px;
-    text-align: left;
-  }
-
-  .jumbotron .containter p {
-    color: #6D584F;
-  }
   
-  
-  .jumbotron .btn {
-    font-family: 'Corben', cursive;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    color: #ffffff;
-  }
-  
-
-  .jumbotron .btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .jumbotron .btn:hover {
-    background-color: #ffebbb;
-  }
-  h1 {
-    color: #6D584F!important;
-  }
-  
+ 
   .btn-main {
     background-color: #ffebbb;
     color: #fff;
@@ -122,25 +88,7 @@ html * {
     line-height: 165px;
   }
   
-  .containter .btn-main {
-    transition: 0.5s;
-  }
   
-  .btn-main:hover {
-    background-color: #b3a78b;
-    font-size: 18px;
-  }
-  
-  .btn-default {
-    font-family: 'Corben', cursive;;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;  
-    margin-bottom: 20px;      
-  }
  /* used grid here */
   footer {
     padding: 20px;
@@ -224,6 +172,49 @@ html * {
         flex-direction: column;
         align-items: flex-start;
     }
+
+     .navbar li {
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+
+    #container {
+    flex-flow: row wrap;
+  }
+
+  
+  /* part of the code that helps with responsiveness */
+
+  #container .right .resize{
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+
+  #container .left h1 {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container .left h2 {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container .left p {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container {
+    padding: 20px 35px;
+  }
+
   
     .toggle-button {
         display: flex;
