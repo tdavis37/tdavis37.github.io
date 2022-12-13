@@ -35,7 +35,16 @@ html, body {
     /* background-color: #fdffcd; */
   }
   
-  
+  .progress {
+    width: 68px;
+    margin-left: 200px;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
   /* color: #717600;​ */
 
   .container-fluid {

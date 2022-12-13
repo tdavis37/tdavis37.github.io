@@ -50,8 +50,7 @@
     
     <div id="container">
         <div class="left">
-          <h2>Pet Grooming</h2>
-          <h1>SERVICES</h1>
+          <h2>Pet Grooming Services</h2>
     			<p>HAIRCUT<img src="IMAGES/icon.png" style="position:relative; left: 0px; top:3px;" class="img-fluid" width="20" height="20"></p>
     			<p>BATHING<img src="IMAGES/icon.png" style="position:relative; left: 0px; top:3px;" class="img-fluid" width="20" height="20"></p>
     			<p>NAIL TRIM<img src="IMAGES/icon.png" style="position:relative; left: 0px; top:3px;" class="img-fluid" width="20" height="20"></p>
@@ -59,16 +58,32 @@
 				
 				<br>
     				<h1>CONTACT US</h1>
-    				<p> 9764 Jeopardy Lane, Chicago, Illinois</p>
-    				<p>petgrooming@gmail.com</p>
-    				<p>call or text (123)456-7890</p>
+            <p>call or text (123)456-7890</p>
+    				<div class="contactform" id="contactform">
+              <div class="page-header" style="text-align: center;">
+            
+                  </div>
+                  <form method="post"
+                  action="https://webdevbasics.net/scripts/javajam8.php"
+                  onsubmit="return validateForm();">
+                  <label for="fname">First Name</label> <input id="fname" name="firstname"
+                  placeholder="Your name.." type="text"> 
+                  <label for="fname">Last Name</label> <input id="fname" name="lastname"
+                  placeholder="Your name.." type="text"> 
+                  <label for="email">Email</label>
+                  <input id="email" name="email" placeholder="Your email.." type="text"> 
+                  <label for="message">Your message</label>
+                      <textarea id="message" name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+          
+                  </select> <input type="submit" value="Get in touch">
+                </form>
+              </div>
         </div>
         
         <div class="right"><img class="resize" src="IMAGES/cleo2.jpg"></div>
 
     </div>
-    <footer id="pageFooter">Pet Grooming 2022</footer>
-    
+<footer id="pageFooter">Pet Grooming 2022</footer>
 <script src= "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
