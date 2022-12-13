@@ -147,6 +147,42 @@ color: #fff;
   
 }
 
+@media (max-width: 600px) {
+  .jumbotron .container h1 {
+      font-size: 20px;
+
+  }
+
+  .jumbotron p {
+    font-family: 'Corben', cursive;
+    font-weight: bold;
+    line-height: 15px;
+    padding-top: 10px;
+    text-align: left;
+  }
+  .container {
+    position:absolute;
+    padding-left: 0px;
+    padding-right: 0px;
+    left: 5px;
+  }
+
+  .btn-main {
+    FONT-VARIANT: JIS90;
+    background-color: #A26367;
+    color: #fff;
+    font-family: 'Corben', cursive;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 120px;
+}
+}
+
 
 
 
