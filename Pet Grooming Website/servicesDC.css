@@ -390,7 +390,7 @@ img {
   }
   @media only screen and (max-width: 600px) {
     .center {
-      width: 573px;
+      width: 396px;
       height: 400 px;
       display: flex;
       justify-content: center;
@@ -398,26 +398,26 @@ img {
   }
 
     .box {
-      width: 234px;
-      height: 234px;
+      width: 200px;
+      height: 200px;
       overflow: hidden;
       border: 7px solid #fff;
       border-radius: 26px;
   }
 
     .box2 {
-      width: 234px;
-        height: 234px;
+      width: 200px;
+        height: 200px;
         overflow: hidden;
         border: 7px solid #fff;
         border-radius: 26px;
     }
 
     img {
-      width: 228px;
-      height: 228px;
+      width: 192px;
+      height: 192px;
       float: right;
-      margin-left: 20px;
+      margin-left: 47px;
       border-radius: 20px;
   }
 
