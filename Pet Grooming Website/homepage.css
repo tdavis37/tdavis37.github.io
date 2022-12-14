@@ -17,7 +17,6 @@
 /* CSS Color Pallete  */
 
 html * { 
-	color: #fff !important;
 	font-family: 'Corben', cursive !important;
   font-weight: 400;
   box-sizing: border-box;
@@ -25,9 +24,156 @@ html * {
   padding: 0;
   
 	}
+  
+  html, body {
+     
+      margin: 0;
+      padding: 0;
+      font-family: 'Corben', cursive;
+      font-weight: 400;
+      height: auto;
+    }
+    
+  
+  
+    main {
+      text-align: center;
+      position: relative;
+    }
+    
+    
+   
+  
+    
+    
+    
+  h1 {
+      font-size: 1.5rem!important;
+  }
+  /* Core Styles */
+
+body {
+  margin: 0;
+  font-family: 'Corben', cursive !important;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-wrap .btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 450px;
+  color: black;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333
+    url("IMAGES/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* Section A */
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+/* Section B */
+
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/* Section D / Boxes */
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #A26367;
+}
+
+
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
 
   body {
     overflow-x: hidden;
+      /* background-repeat: no-repeat;
+    background-image: url(IMAGES/pets.jpg);
+    background-size: cover; */
   }
 	
 li, a, button {
@@ -45,6 +191,7 @@ header {
   padding:-5px 10%;
   background-color: #A26367;
 } */
+
 
 .navbar {
   display: flex;
@@ -81,11 +228,7 @@ header {
 .navbar-links li:hover {
   background-color: rgba(255,255,255,0.3)!important;
 }
-.navbar-links li:nth-child(1) {
-background-color: rgba(255,255,255,0.3)!important;
-text-decoration: none; 
-color: #fff;
-}
+
 .toggle-button {
   position: absolute;
   top: .75rem;
@@ -102,6 +245,11 @@ color: #fff;
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+h1, h2, h3 {
+  margin: 100px;
+  padding: 0.5em 0;
 }
 
 
@@ -143,8 +291,6 @@ color: #fff;
   .navbar-links.active {
       display: flex;
   }
-
-  
 }
 
 @media (max-width: 600px) {
@@ -187,29 +333,6 @@ color: #fff;
 
 
 
-
-
-
-
-
-
-
-
-
-/* Background Styles Only */
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-* {
-  font-family: Raleway;
-}
-
-html {
-  background-color: #DFDFDF;
-}
-
-
-
 header .navbar h2 a {
   font-family: 'Lobster', cursive!important;
     font-size: 1.5rem;
@@ -228,148 +351,22 @@ header .navbar h2 a {
 
 
 
-
-
-
-
-
-body {
-  background-repeat: no-repeat;
-  background-image: url(IMAGES/pets.jpg);
-  background-size: cover;
-}
-
-html, body {
-   
-    margin: 0;
-    padding: 0;
-    font-family: 'Corben', cursive;
-    font-weight: 400;
-    height: auto;
-    background-color: #e0ffcd;
-  }
-  
-
-
-  main {
-    text-align: center;
-    position: relative;
-  }
-  
-  
   
  
-
-  
-  .jumbotron {
-    width: 1200px;
-    height: 100vh;
-    margin: auto;
-    padding: 50px;
-    background-size: cover;
-  }
-  p {
-    color: #fff
-  }
-
-  .jumbotron p {
-    font-family: 'Corben', cursive;
-    font-weight: bold;
-    line-height: 30px;
-    padding-top: 10px;
-    text-align: left;
-  }
-
-  .jumbotron .containter p {
-    color: #6D584F;
-  }
-  
-  .jumbotron .btn {
-    font-family: 'Corben', cursive;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    color: #ffffff;
-  }
   
 
-  .jumbotron .btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .jumbotron .btn:hover {
-    background-color: #A26367;;;
-  }
-  h1 {
-    color: #fff;
-  }
-  
-  .btn-main {
-    background-color: #A26367;
-    color: #fff;
-    font-family: 'Corben', cursive;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.3px;
-    padding: 10px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 165px;
-  }
-  
-  .containter .btn-main {
-    transition: 0.5s;
-  }
-  
-  .btn-main:hover {
-    background-color: #a28587;
-    font-size: 18px;
-  }
-  
-  .btn-default {
-    font-family: 'Corben', cursive;;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;  
-    margin-bottom: 20px;      
-  }
- /* used grid here */
   footer {
     padding: 20px;
     background-color: #A26367;;
   }
 
-  /* header {
-    background-color: #A26367;;
-  } */
+ 
 
   #pageFooter {
     grid-area: footer;
     color: #fff;
   }
 
-  /* #pageHeader {
-    grid-area: header;
-    width: 1200px;
-    height: 80px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 25px;
-    min-width: 100px;
-  } */
 
  
 

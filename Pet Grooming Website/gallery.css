@@ -251,29 +251,6 @@ html, body {
   background-color: #e0ffcd;
 }
 
-.clearfix {
-  clear: both;
-}
-
-
-
-
-.swiper {
-  width: 60%;
-  height: fit-content;
-}
-
-.swiper-slide img {
-  width: 100%;
-}
-
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-  color: #fff;
-}
-
-.swiper .swiper-pagination-bullet-active {
-  background: #fff;
-}
 
 footer {
   padding: 20px;

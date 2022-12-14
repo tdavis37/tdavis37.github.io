@@ -1,55 +1,21 @@
-/* CSS Color Pallete  */
-.first-color { 
-	background: #e0ffcd; 
-}
-	
-.second-color { 
-	background: #fdffcd; 
-}
-
-.third-color { 
-	background: #ffebbb; 
-}
-
-.fourth-color { 
-	background: #ffcab0; 
-}
-/* CSS Color Pallete  */
-
-
-.img-fluid {
- max-width: 20%;
- height: auto;
-}
-
-.box {
-    padding: 10px;
-    border-radius: 25px;
-    background-color: rgb(213, 213, 213);
+* {
     margin: 0;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
 html * { 
-	color: #fff !important;
-	font-family: 'Corben', cursive !important;
+	font-family: 'Corben', cursive!important;
   font-weight: 400;
+  box-sizing: border-box;
 	}
-
-body main {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-html, body {
+	
+  html, body {
    
     margin: 0;
     padding: 0;
-    font-family: 'Corben', cursive!important;
+    font-family: 'Corben', cursive;
     font-weight: 400;
     height: 100vh;
     background-repeat: no-repeat;
@@ -58,397 +24,343 @@ html, body {
     /* background-color: #fdffcd; */
   }
   
-  
-  /* color: #717600;​ */
-
-  .container-fluid {
-    width: 100%;
+  img {
+    width: 80px; 
     height: 80px;
-    background-color: #ffebbb;
+    margin-bottom: -30px;
   }
-  
-  #pageHeader h2 {
-    font-family: 'Corben', cursive!important;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
+  body {
+    background-color: #f9f6f6!important;
+    overflow-x: hidden;
   }
-
-  #pageHeader h2 a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  #pageHeader ul {
+ 
+#container {
+    min-height: 88vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-
-  #pageHeader ul li {
-    list-style: none;
-  }
-  #pageHeader ul li a {
-    font-family: 'Corben', cursive!important;
-    color: #fff;
-    list-style: none;
-    margin-right: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-    list-style: none;
-  }
-
-  #pageHeader ul li:nth-child(4) a{
-    color: #6D584F;
-  }
+    justify-content: center;
+}
 
 
-  #pageHeader ul li:hover {
-    color: #6D584F;
+
+
+.left {
+    width: 50vw;
+}
+
+
+.right {
+    width: 50vw;
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #666666;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #444;
+}
+
+.contactform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Julius Sans One', sans-serif;	
+  text-transform: uppercase;
+}
+
+.contactform option {
+font-family: 'Crimson Text', serif;
+}
+.contactform textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 8px 0;
+padding: 12px 20px;
+}
+
+.resize {
+  width: auto;
+  height: 126vh;
+  display: block;
+  object-position: center;
+}
+
+#container .left h1 {
+  color: #6D584F!important;
+  text-align: center!important;
+}
+
+#container .left p {
+    color: #6D584F!important;
+    text-align: center!important;
   }
 
-  #pageHeader ul li a:hover {
-    color: #6D584F;
+  #container .left h2 {
+      font-family: 'Lobster', cursive!important;
+      font-size: 45px;
+      cursor: pointer;
+      color: #6D584F!important;
+      text-decoration: none;
+      margin: 0.5rem;
+      text-align: center!important;
   }
+
 
   main {
     text-align: center;
     position: relative;
   }
   
+
   
   
  
-
-  
-  .jumbotron {
-    width: 1200px;
-    height: 100vh;
-    margin: auto;
-    padding: 50px;
-    background-size: cover;
-  }
-  p {
-    color: #fff
-  }
-
-  .jumbotron p {
-    font-family: 'Corben', cursive!important;
-    font-weight: bold;
-    line-height: 30px;
-    padding-top: 30px;
-  }
-
-  .jumbotron .containter p {
-    color: #6D584F
-  }
-  
-  .jumbotron .btn {
-    font-family: 'Corben', cursive!important;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    color: #ffffff;
-  }
-  
-
-  .jumbotron .btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .jumbotron .btn:hover {
-    background-color: #ffebbb;
-  }
-  h1 {
-    color: #fff;
-  }
-  
   .btn-main {
     background-color: #ffebbb;
     color: #fff;
-    font-family: 'Corben', cursive!important;
+    font-family: 'Corben', cursive;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.3px;
-    padding: 16px 40px;
+    padding: 10px 40px;
+    border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
-  }
-
-  .containter .btn-main {
-    transition: 0.5s;
+    line-height: 165px;
   }
   
-  .btn-main:hover {
-    background-color: #b3a78b;
-    font-size: 18px;
-  }
-  .btn-default {
-    font-family: 'Corben', cursive!important;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;  
-    margin-bottom: 20px;      
-  }
+  
  /* used grid here */
+  footer {
+    padding: 20px;
+    background-color: #A26367;
+  }
+
  
-  header {
-    background-color: #ffebbb
-  }
 
-
-
-  #pageHeader {
-    grid-area: header;
-    width: 1200px;
-    height: 80px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 25px;
-  }
-
-
-
-h3 {
-    color: #ffcab0;
-    font-size: small;
-}
-
-.start {
-  color: white;
-}
-
-
-.field-group{
-  width: 300px;
-  float: left;
-  padding: 5px;
-}
-.row {
-  width: 980px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.select-label{
-	font-family: 'Corben', cursive!important;
-	font-size: 16px;
-	color: #ffffff;
-}
-
-
-.book {
-  margin-top: 43px;
-}
-.select-field{
-  font-family: 'Corben', cursive!important;
-  
-  width: 100%;
-  outline: 0;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  padding: 15px 15px;
-  font-size: 0.86em;
-  color: #171717;
-  background: #fff;
-  background-image: linear-gradient(#fff, #fff),
-                      linear-gradient(-135deg, transparent 50%, #ffebbb 50%),
-                      linear-gradient(-225deg, transparent 50%, #ffebbb 50%),
-                      linear-gradient(#ffebbb 40%, #fff 40%);
-  background-repeat: no-repeat;
-  background-size: 1px 100%, 50px 40px, 50px 40px, 50px 100%;
-  background-position: right 50px center, right bottom, right bottom, right bottom;
-  -webkit-appearance: none;
-  appearance: none;
-  
-}
-
-.select-field:hover{
-  background-image: linear-gradient(#fff, #fff),
-                      linear-gradient(-135deg, transparent 50%, #fff 50%),
-                      linear-gradient(-225deg, transparent 50%, #fff 50%),
-                      linear-gradient(#fff 40%, #ffebbb 40%);
-}
-.select-field:active{
-  background-image: linear-gradient(#fff, #fff),
-                      linear-gradient(-135deg, transparent 50%, #fff 50%),
-                      linear-gradient(-225deg, transparent 50%, #fff 50%),
-                      linear-gradient(#fff 40%, #fff 40%);
-  color: #ffebbb;
-  border-color: #fff;
-  background-color: #fff;
-}
-.select-field option:checked{
-  background-color: #ffebbb;
-}
-
-button {
-  font-family: 'Corben', cursive!important;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 13.5px 50px;
-  border-radius: 10px;
-  font-weight: 600;
-  border: none;
-  color: #fff;
-  background-color: #ffebbb;
-  margin-right: 16px;
-  margin-top: 30px;
-  transition: 500ms ease all;
-}
-
-button:hover {
-	transform: scale(1.06) perspective(1px);
-}
-
-@media only screen and (max-width: 900px) {
-
-  .nav-link {
-    transition: 0.7s ease;
-  }
-
-  .nav-link:hover {
-    color: dodgerblue;
-  }
-  #pageHeader {
-    width: 390px;
-    height: 80px;
-  }
-  
-  #pageHeader ul {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #pageHeader ul li {
-    list-style: none;
-  }
-  #pageHeader ul li a {
-    font-family: 'Corben', cursive;
+  #pageFooter {
+    grid-area: footer;
     color: #fff;
-    list-style: none;
-    margin-right: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s ease;
-    text-decoration: none;
-    list-style: none;
   }
 
-  .hamburger {
-    display: none;
-    cursor: pointer;
+  header .navbar h2 a {
+    font-family: 'Lobster', cursive!important;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem;
   }
 
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-  }
-  
-} 
-
-@media(max-width: 768px) {
-
-  .nav-link {
-    transition: 0.7s ease;
+  table {
+    font-weight: bold!important;
   }
 
-  .nav-link:hover {
-    color: dodgerblue;
-  }
-    .hamburger {
-      display: block;
-    }
+#tblData tbody tr:nth-child(odd) td,
+#tblData tbody tr:nth-child(odd) th {
+	background-color: #F2DEE0;
+}
 
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-      position:fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .nav-item {
-      margin: 16px 0;
-    }
-
-    .nav-menu.active {
-      Left: 0;
-    }
+#tblData tbody tr:nth-child(even) td,
+#tblData tbody tr:nth-child(even) th {
+	background-color: #A26367;
+    color:#fff;
 }
 
 
-
-@media only screen and (max-width: 600px) { 
-  .row { 
-    display: block!important;
+  .navbar {
+    display: flex;
     position: relative;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 20px 50px;
+    background-color: #A26367;
+    color: white;
   }
-     .field-group { 
-      width: 300px;
-      float: left;
-      padding: 5px;
-    } 
-    button { 
-      font-family: 'Corben', cursive;
-      font-size: 16px; cursor: pointer;
-      padding: 13.5px 50px;
-      width: 300px;
-      border-radius: 10px; 
-      font-weight: 600;
-      border: none; color: #fff;
-      background-color: #A26367;
-      margin-right: 16px;
-      margin-top: 30px;
-      transition: 500ms ease all; 
-    } 
-    
+  
+  .navbar-links {
+    height: 100%;
   }
+  
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .navbar-links li:hover {
+    background-color: rgba(255,255,255,0.3)!important;
+  }
+  .navbar-links li:nth-child(4) {
+  background-color: rgba(255,255,255,0.3)!important;
+  text-decoration: none; 
+  color: #fff;
+  }
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+     .navbar li {
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+
+    #container {
+    flex-flow: row wrap;
+  }
+
+  
+  /* part of the code that helps with responsiveness */
+
+  #container .right .resize{
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+
+  #container .left h1 {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container .left h2 {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container .left p {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  #container {
+    padding: 20px 35px;
+  }
+
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #444;
+}
+
+.contactform {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Julius Sans One', sans-serif;	
+    text-transform: uppercase;
+}
+
+.contactform option {
+	font-family: 'Crimson Text', serif;
+}
+.contactform textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #FFF;
+	margin: 8px 0;
+	padding: 12px 20px;
+}
