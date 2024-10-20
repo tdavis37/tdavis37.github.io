@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/IMAGES/icon.png" type="image/x-icon" />
+<link href = "registerProduct.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+
+    <title>Account History</title>
+</head>
+
+<body>
+
+
+	<header>
+    <nav class="navbar" style="
+    padding-top: 0px;
+    padding-bottom: 0px;">
+      <h2><a href="index.html">Pet Grooming<span class="material-symbols-outlined">
+      </span></a></h2>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+	
+	<div class="box">
+		<div class="row">
+			<h1 style="color:white;">Account History<img src="IMAGES/icon.png" class="img-fluid" /></h1> 
+			<br>
+			
+			
+			<div class="col-sm-12">
+			<h3><a  href="@{'/new'}">Add new</a></h3>   
+				<table bgcolor="#d3d3d3" id="tblData" width="600px">
+					<thead>
+						<tr bgcolor="#fff">
+							<th width="100px">Id</th>
+							<th width="100px">Pet Type</th>
+							<th width="100px">Breed</th>
+							<th width="100px">Age</th>
+							<th width="100px">Edit</th>
+							<th width="100px">Delete<th>
+						</tr>
+					</thead>
+					<tbody id="tblDataBody">
+					 <tr bgcolor="#f70776"  align="center" each="student : ${liststudent }">
+						<td>1</td>
+						<td>Dog</td>
+						<td>Chihuahua</td>
+						<td>6 months or older</td>
+						<td> 
+							<a href="#">Edit</a>
+						</td>
+						<td>
+						<a href="#">Delete</a>
+						</td>
+					 </tr>
+	
+					 <tr bgcolor="#f70776"  align="center" each="student : ${liststudent }">
+						<td>2</td>
+						<td>Cat</td>
+						<td>Domestic - Shorthaired</td>
+						<td>8 weeks - 5 months</td>
+						<td> 
+							<a href="#">Edit</a>
+						</td>
+						<td>
+						<a href="#">Delete</a>
+						</td>
+					 </tr>
+	
+					 <tr bgcolor="#f70776"!important  align="center" each="student : ${liststudent }">
+						<td>3</td>
+						<td>Dog</td>
+						<td>American Eskimo</td>
+						<td>8 weeks - 5 months</td>
+						<td> 
+							<a href="#">Edit</a>
+						</td>
+						<td>
+						<a href="#">Delete</a>
+						</td>
+					 </tr>
+					</tbody>
+				</table>
+			</div>
+		
+		</div>
+	</div>
+
+	
+	
+	
+	
+
+
+
+
+ 
+
+
+
+
+<script th:src= "@{/JS/registerProduct.js}"></script>
+
+<script th:src= "@{/JS/services.js}"></script>
+<!-- JQuery linked below -->
+<script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js}"></script>
+<script th:src="@{js/jquery.easydropdown.js}" type="text/javascript"></script>
+<script  src="JS/hamburger.js"></script>
+
+<!-- <script type="text/javascript">
+	const customersBody = document.querySelector("#tblData > tbody");
+
+	function loadCustomers () {
+		const request = new XMLHttpRequest();
+
+		request.open("get", "data/customersDB.json");
+		request.onload = () => {
+			try {
+				const json = JSON.parse(request.responseText);
+				populateCustomers(json);
+			} catch (e) {
+				console.warn("Could not load customers! :(");
+			}
+		};
+
+		request.send();
+	}
+
+	function populateCustomers (json) {
+		//clears out existing table data
+		while (customersBody.firstChild) {
+			customersBody.removeChild(customersBody.firstChild);
+		}
+
+		//Populate table
+		json.forEach((row) => {
+			const tr =  document.createElement("tr");
+
+
+			row.forEach((cell) => {
+				const td = document.createElement("td");
+				td.textContent = cell;
+				tr.appendChild(td);
+			});
+
+			customersBody.appendChild(tr);
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", () => { loadCustomers(); });
+</script> -->
+
+
+</body>
+</html>
